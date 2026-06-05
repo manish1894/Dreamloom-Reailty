@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>DreamLoom Reality</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/static/style.css">
     </head>
 
     <body>
@@ -9,12 +9,13 @@
         <div class="login-box">
         <h1>DreamLoom Reality</h1>
         <p> Building Excellence. Delivering Trust.</p>
-
-        <input type="text" id="username" placeholder="Enter username">
+    <form action="/login" method="POST">
+        <input type="text" id="username" name="username" placeholder="Enter username" required>
         <br><br>
-        <input type="password" id="password" placeholder="enter your password">
+        <input type="password" id="password" name="password" placeholder="enter your password" required>
         <br><br>
-        <button onclick="login()">Login</button>
+        <button type="submit">Login</button>
+    </form>
         </div>
         </div>
         <script src="sc.js"></script>
